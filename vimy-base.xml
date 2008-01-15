@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>0.75</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Vickers-Vimy/vimy-splash.rgb</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Vickers-Vimy/Sounds/vimy-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Vickers-Vimy/Models/vimy.xml</path>
+    </model>
+
+    <panel>
+      <visibility archive="y">false</visibility>
+    </panel>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay>
+
+    <help>
+      <title>Vickers Vimy</title>
+      <line>______________________________________________</line>
+    </help>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>175</weight-lb>
+      <max-lb>200</max-lb>
+    </weight>
+
+  </sim>
+
+  <input>
+    <keyboard include="Nasal/vimy-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <Vimy>
+      <file>Aircraft/Vickers-Vimy/Nasal/doors.nas</file>
+    </Vimy>
+  </nasal>
+
+</PropertyList>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="vimy-jsbsim-set.xml"> -->
+<PropertyList include="vimy-yasim-set.xml">
+
+  <sim>
+    <description>Vickers Vimy</description>
+    <author>Emmanuel BARANGER (3D)</author>
+  </sim>
+
+</PropertyList>
+

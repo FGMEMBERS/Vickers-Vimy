@@ -1,0 +1,213 @@
+<!-- Vickers Vimy
+
+     Wingspan : 20.75 m (68 ft 1 in)
+     Lenght   : 13.27 m (43 ft 7 in)
+     Height   :  4.76 m (15 ft 8 in)
+     Weight   : 3 220 Kg (7104 lb)
+     Engines  : 2 x Rolls Royce Eagle VIII 12 cylinders inline (360 hp each)
+-->
+<airplane mass="7104">
+
+<approach speed="40" aoa="14">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle" value="0.4"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
+  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.5"/>
+</approach>
+
+<cruise speed="90" alt="7000">
+  <control-setting axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[0]/boost" value="1.0"/>
+  <control-setting axis="/controls/engines/engine[1]/boost" value="1.0"/>
+</cruise>
+
+<cockpit x="4.608" y="0.270" z="0.585"/>
+
+<fuselage ax="6.208" ay="0" az="-0.302" 
+          bx="-6.531" by="0" bz="-0.345"
+          width="1.254" taper="0.5" midpoint="0.25"/>
+
+<wing x="2.437" y="0" z="1.900" 
+      length="9.388" 
+      camber="0.1"
+      chord="3.147" 
+      taper="1" 
+      sweep="0" 
+      dihedral="4" 
+      twist="0">
+  <stall aoa="14" width="6" peak="1.5"/>
+  <flap1 start="0.38" end="0.97" lift="1.2" drag="1.2"/>
+
+  <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+  <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+  <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+  <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+</wing>
+
+<mstab x="2.437" y="0" z="-1.104" 
+       length="9.388"  
+       camber="0.1"
+       chord="3.147" 
+       taper="1" 
+       sweep="0" 
+       dihedral="4" 
+       twist="0">
+   <stall aoa="14" width="6" peak="1.5"/>
+   <flap1 start="0.38" end="0.97" lift="1.2" drag="1.2"/>
+
+   <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+   <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+   <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+   <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+</mstab>
+
+<hstab x="-5.679" y="0.0" z="0.927" 
+       length="2.371"
+       chord="1.823" 
+       taper="1" 
+       sweep="0" 
+       incidence="0">
+  <stall aoa="18" width="3" peak="1.5"/>
+  <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+
+  <control-input axis="/controls/flight/elevator" control="FLAP0" effectiveness="0.3"/>
+  <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+  <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+</hstab>
+
+<mstab x="-5.679" y="0.0" z="-0.619" 
+       length="2.371" 
+       chord="1.823" 
+       taper="1" 
+       sweep="0" 
+       incidence="0">
+   <stall aoa="18" width="3" peak="1.5"/>
+   <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+
+   <control-input axis="/controls/flight/elevator" control="FLAP0" effectiveness="0.3"/>
+   <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+   <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+</mstab>
+
+<vstab x="-5.816" y="1.629" z="0.159" 
+       length="1.425"
+       chord="0.828" 
+       taper="1" 
+       sweep="0">
+  <stall aoa="14" width="3" peak="1.5"/>
+  <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+
+  <control-input axis="/controls/flight/rudder" control="FLAP0" effectiveness="2.0" invert="true"/>
+  <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+  <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+</vstab>
+
+<vstab x="-5.816" y="-1.629" z="0.159" 
+       length="1.425"
+       chord="0.828" 
+       taper="1" 
+       sweep="0">
+  <stall aoa="14" width="3" peak="1.5"/>
+  <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+
+  <control-input axis="/controls/flight/rudder" control="FLAP0" effectiveness="2.0" invert="true"/>
+  <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+  <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+</vstab>
+
+<!-- Moteur gauche -->
+<propeller x="3.175" y="2.540" z="0.395"
+           mass="900" 
+           moment="35" 
+           radius="1.6"
+           eng-power="360" 
+           eng-rpm="1800"
+           cruise-power="320" 
+           cruise-speed="85"
+           cruise-rpm="1400" 
+           cruise-alt="7000"
+           min-rpm="500" 
+           max-rpm="1800">
+  <actionpt x="4.643" y="2.539" z="0.254"/>
+  <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+  <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+  <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+  <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
+  <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
+</propeller>
+
+<!-- Moteur droite -->
+<propeller x="3.175" y="-2.540" z="0.395"
+           mass="900" 
+           moment="35" 
+           radius="1.6"
+           eng-power="360" 
+           eng-rpm="1800"
+           cruise-power="320" 
+           cruise-speed="85"
+           cruise-rpm="1400" 
+           cruise-alt="7000"
+           min-rpm="500" 
+           max-rpm="1800">
+  <actionpt x="4.643" y="-2.539" z="0.254"/>
+  <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+  <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
+  <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
+  <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
+  <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
+  <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
+</propeller>
+
+<!-- Roues gauches -->
+<gear x="3.203" y="2.442" z="-2.325" 
+      compression="0.3" 
+      spring="1" 
+      damp="10">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+</gear>
+
+<!-- Roues droites -->
+<gear x="3.203" y="-2.442" z="-2.325" 
+      compression="0.3"
+      spring="1" 
+      damp="10">
+  <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+  <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+</gear>
+
+<!-- Patte de queue -->
+<gear x="-6.264" y="0" z="-1.284" 
+      compression="0.1">
+  <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING"/>
+</gear>
+
+
+<!-- Patte de nez -->
+<gear x="6.148" y="0" z="-2.121" 
+      compression="0.1">
+  <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING"/>
+</gear>
+
+<!-- From the type certificate: "Fuel capacity: 822 gals. (4 tanks in
+     center section wing: 2 main including fuel system 210 gals. each
+     (+48) and 2 aux. 201 gals. each (+83.5)" -->
+<tank x="7.0" y="0" z="-0.95" capacity="110"/>
+
+<!-- <ballast x="-18.0" y="0.0" z="0.6" mass="400"/> -->
+
+</airplane>
