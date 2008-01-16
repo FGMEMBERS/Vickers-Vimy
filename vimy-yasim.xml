@@ -1,4 +1,5 @@
-<!-- Vickers Vimy
+<!-- Vickers Vimy Emmanuel BARANGER
+       correction Pierre GEOFFROY
 
      Wingspan : 20.75 m (68 ft 1 in)
      Lenght   : 13.27 m (43 ft 7 in)
@@ -13,8 +14,6 @@
   <control-setting axis="/controls/engines/engine[1]/throttle" value="0.4"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
-  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="0.5"/>
-  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="0.5"/>
 </approach>
 
 <cruise speed="90" alt="7000">
@@ -22,10 +21,8 @@
   <control-setting axis="/controls/engines/engine[1]/throttle" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
-  <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
-  <control-setting axis="/controls/engines/engine[1]/propeller-pitch" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/boost" value="1.0"/>
-  <control-setting axis="/controls/engines/engine[1]/boost" value="1.0"/>
+<!--  <control-setting axis="/controls/engines/engine[1]/boost" value="1.0"/> -->
 </cruise>
 
 <cockpit x="4.608" y="0.270" z="0.585"/>
@@ -133,21 +130,20 @@
            mass="900" 
            moment="35" 
            radius="1.6"
-           eng-power="360" 
-           eng-rpm="1800"
            cruise-power="320" 
            cruise-speed="85"
            cruise-rpm="1400" 
-           cruise-alt="7000"
-           min-rpm="500" 
-           max-rpm="1800">
+           cruise-alt="7000">
+           <piston-engine eng-rpm="1800" 
+                          eng-power="360"
+                          displacement="1220" 
+                          compression="5"/>
   <actionpt x="4.643" y="2.539" z="0.254"/>
   <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
   <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
   <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
-  <control-input axis="/controls/engines/engine[0]/propeller-pitch" control="ADVANCE"/>
-  <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/>
+<!--  <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/> -->
 </propeller>
 
 <!-- Moteur droite -->
@@ -155,21 +151,20 @@
            mass="900" 
            moment="35" 
            radius="1.6"
-           eng-power="360" 
-           eng-rpm="1800"
            cruise-power="320" 
            cruise-speed="85"
            cruise-rpm="1400" 
-           cruise-alt="7000"
-           min-rpm="500" 
-           max-rpm="1800">
+           cruise-alt="7000">
+           <piston-engine eng-rpm="1800" 
+                          eng-power="360"
+                          displacement="1220" 
+                          compression="5"/>
   <actionpt x="4.643" y="-2.539" z="0.254"/>
   <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
   <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
   <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
   <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
-  <control-input axis="/controls/engines/engine[1]/propeller-pitch" control="ADVANCE"/>
-  <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/>
+<!--  <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/> -->
 </propeller>
 
 <!-- Roues gauches -->
