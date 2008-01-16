@@ -22,7 +22,6 @@
   <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
   <control-setting axis="/controls/engines/engine[1]/mixture" value="1.0"/>
   <control-setting axis="/controls/engines/engine[0]/boost" value="1.0"/>
-<!--  <control-setting axis="/controls/engines/engine[1]/boost" value="1.0"/> -->
 </cruise>
 
 <cockpit x="4.608" y="0.270" z="0.585"/>
@@ -133,7 +132,8 @@
            cruise-power="320" 
            cruise-speed="85"
            cruise-rpm="1400" 
-           cruise-alt="7000">
+           cruise-alt="7000"
+           contra="1">
            <piston-engine eng-rpm="1800" 
                           eng-power="360"
                           displacement="1220" 
@@ -143,7 +143,6 @@
   <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
   <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
   <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
-<!--  <control-input axis="/controls/engines/engine[0]/boost" control="BOOST"/> -->
 </propeller>
 
 <!-- Moteur droite -->
@@ -154,7 +153,8 @@
            cruise-power="320" 
            cruise-speed="85"
            cruise-rpm="1400" 
-           cruise-alt="7000">
+           cruise-alt="7000"
+           contra="1">
            <piston-engine eng-rpm="1800" 
                           eng-power="360"
                           displacement="1220" 
@@ -164,7 +164,6 @@
   <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
   <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
   <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
-<!--  <control-input axis="/controls/engines/engine[1]/boost" control="BOOST"/> -->
 </propeller>
 
 <!-- Roues gauches -->
@@ -198,11 +197,6 @@
   <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING"/>
 </gear>
 
-<!-- From the type certificate: "Fuel capacity: 822 gals. (4 tanks in
-     center section wing: 2 main including fuel system 210 gals. each
-     (+48) and 2 aux. 201 gals. each (+83.5)" -->
 <tank x="7.0" y="0" z="-0.95" capacity="110"/>
-
-<!-- <ballast x="-18.0" y="0.0" z="0.6" mass="400"/> -->
 
 </airplane>

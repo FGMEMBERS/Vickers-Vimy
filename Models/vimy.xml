@@ -28,8 +28,16 @@
     <object-name>profondeurB</object-name>
     <object-name>directionG</object-name>
     <object-name>directionD</object-name>
+    <object-name>montants</object-name>
+    <object-name>essieus</object-name>
+    <object-name>entreroues</object-name>
 
     <!-- Objets transparents -->
+    <object-name>cables</object-name>
+    <object-name>cablesAilGH</object-name>
+    <object-name>cablesAilGB</object-name>
+    <object-name>cablesAilDH</object-name>
+    <object-name>cablesAilDB</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscD</object-name>
@@ -55,6 +63,84 @@
       </greater-than>
     </condition>
   </animation>
+
+  <!-- Rpm moteur gauche -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m> -1.938 </y-m>
+      <z-m>  0.576 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rpm moteur droit -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m>  1.938 </y-m>
+      <z-m>  0.576 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil temp. moteur gauche -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Instruments/oiltemp/oiltemp1.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m> -1.938 </y-m>
+      <z-m>  0.445 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil temp. moteur droit -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Instruments/oiltemp/oiltemp2.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m>  1.938 </y-m>
+      <z-m>  0.445 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil press. moteur gauche -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Instruments/oilpressure/oilpressure1.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m> -1.938 </y-m>
+      <z-m>  0.316 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil press. moteur droit -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Instruments/oilpressure/oilpressure2.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m>  1.938 </y-m>
+      <z-m>  0.316 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
 
   <animation>
     <name>HeliceG</name>
@@ -192,6 +278,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronGH</object-name>
+    <object-name>cablesAilGH</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
     <factor>20.0</factor>
     <center>
@@ -209,6 +296,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronGB</object-name>
+    <object-name>cablesAilGB</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
     <factor>20.0</factor>
     <center>
@@ -226,6 +314,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronDH</object-name>
+    <object-name>cablesAilDH</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
     <factor>20.0</factor>
     <center>
@@ -243,6 +332,7 @@
   <animation>
     <type>rotate</type>
     <object-name>aileronDB</object-name>
+    <object-name>cablesAilDB</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
     <factor>20.0</factor>
     <center>
