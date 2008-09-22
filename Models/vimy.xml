@@ -39,6 +39,7 @@
     <object-name>montants</object-name>
     <object-name>essieus</object-name>
     <object-name>entreroues</object-name>
+    <object-name>marches</object-name>
 
     <!-- Objets transparents -->
     <object-name>cables</object-name>
@@ -86,6 +87,7 @@
     <object-name>montants</object-name>
     <object-name>essieus</object-name>
     <object-name>entreroues</object-name>
+    <object-name>marches</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>

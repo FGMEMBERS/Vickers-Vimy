@@ -59,8 +59,7 @@
   <nasal>
     <Vimy>
       <file>Aircraft/Vickers-Vimy/Nasal/doors.nas</file>
-      <file>Aircraft/DR400/Nasal/light.nas</file>
-      <file>Aircraft/DR400/Nasal/liveries.nas</file>
+      <file>Aircraft/Vickers-Vimy/Nasal/liveries.nas</file>
     </Vimy>
   </nasal>
 

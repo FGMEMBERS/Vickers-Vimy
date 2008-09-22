@@ -1,2 +1,2 @@
-aircraft.livery.init("Aircraft/Vicker-Vimy/Models/Liveries");
+aircraft.livery.init("Aircraft/Vickers-Vimy/Models/Liveries");
 

@@ -4,9 +4,9 @@ MATERIAL "DefaultWhite.001" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 
 OBJECT world
 kids 1
 OBJECT poly
-name "interior"
-data 8
-interior
+name "interieur"
+data 9
+interieur
 texture "colors.png"
 texrep 1 1
 crease 30.000000
