@@ -11,7 +11,7 @@
     <fuel-fraction>0.75</fuel-fraction>
 
     <startup>
-      <splash-texture>Aircraft/Vickers-Vimy/vimy-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/Vickers-Vimy/vimy-splash.png</splash-texture>
     </startup>
 
     <sound>
@@ -20,14 +20,21 @@
 
     <model>
       <path archive="y">Aircraft/Vickers-Vimy/Models/vimy.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
-
-    <panel>
-      <visibility archive="y">false</visibility>
-    </panel>
 
     <multiplay>
       <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
     </multiplay>
 
     <help>
@@ -41,6 +48,8 @@
       <max-lb>200</max-lb>
     </weight>
 
+    <menubar include="Dialogs/vimy-menu.xml"/>
+
   </sim>
 
   <input>
@@ -50,6 +59,8 @@
   <nasal>
     <Vimy>
       <file>Aircraft/Vickers-Vimy/Nasal/doors.nas</file>
+      <file>Aircraft/DR400/Nasal/light.nas</file>
+      <file>Aircraft/DR400/Nasal/liveries.nas</file>
     </Vimy>
   </nasal>
 

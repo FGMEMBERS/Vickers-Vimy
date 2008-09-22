@@ -1,4 +1,4 @@
-English/FranÃ§ais
+English/Français
 
 [English]
 ----------
@@ -34,7 +34,7 @@ http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
 
 
-[FranÃ§ais]
+[Français]
 ----------
 
 Un peu d'histoire
@@ -45,13 +45,13 @@ Vivkers Vimy
 
 Constructeur                  : Vivkers
 Type                          : Bombardier
-AnnÃ©e                         : 1918
+Année                         : 1918
 Moteur                        : 2 x Rolls Royce Eagle VIII (360 ch)
 Envergure                     : 20.75 m
 Longueur                      : 13.27 m
 Hauteur                       :  4.76 m
-Poids Ã  vide                  : 3220 kg
-Vitesse croisiÃ¨re             : 150  km/h
+Poids à vide                  : 3220 kg
+Vitesse croisière             : 150  km/h
 Equipage                      : 4
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
-<!-- <PropertyList include="vimy-jsbsim-set.xml"> -->
-<PropertyList include="vimy-yasim-set.xml">
+<!-- <PropertyList include="vimy-jsbsim-cnf.xml"> -->
+<PropertyList include="vimy-yasim-cnf.xml">
 
   <sim>
     <description>Vickers Vimy</description>

@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- Rpm moteur gauche -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m> -1.938 </y-m>
+      <z-m>  0.576 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Rpm moteur droit -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m>  1.938 </y-m>
+      <z-m>  0.576 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil temp. moteur gauche -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oiltemp/oiltemp1.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m> -1.938 </y-m>
+      <z-m>  0.445 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil temp. moteur droit -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oiltemp/oiltemp2.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m>  1.938 </y-m>
+      <z-m>  0.445 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil press. moteur gauche -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oilpressure/oilpressure1.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m> -1.938 </y-m>
+      <z-m>  0.316 </z-m>
+      <roll-deg>     0.000 </roll-deg>
+      <pitch-deg>    0.000 </pitch-deg>
+      <heading-deg> 90.000 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Oil press. moteur droit -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oilpressure/oilpressure2.xml</path>
+    <offsets>
+      <x-m> -4.149 </x-m>
+      <y-m>  1.938 </y-m>
+      <z-m>  0.316 </z-m>
+      <roll-deg>      0.000 </roll-deg>
+      <pitch-deg>     0.000 </pitch-deg>
+      <heading-deg> -90.000 </heading-deg>
+    </offsets>
+  </model>
+
+</PropertyList>
+

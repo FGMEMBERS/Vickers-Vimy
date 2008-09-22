@@ -4,6 +4,15 @@
 
   <path>vimy.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Vickers-Vimy/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
@@ -13,7 +22,6 @@
     <object-name>aileH</object-name>
     <object-name>aileronGH</object-name>
     <object-name>aileronDH</object-name>
-    <object-name>pilote</object-name>
     <object-name>moteurG</object-name>
     <object-name>heliceG</object-name>
     <object-name>bolG</object-name>
@@ -52,93 +60,77 @@
     <object-name>propblurD</object-name>
   </animation>
 
-  <!-- Pilote invisible depuis le cockpit -->
   <animation>
-    <type>select</type>
-    <object-name>pilote</object-name>
-    <condition>
-      <greater-than>
-        <property>sim/current-view/view-number</property>
-        <value>0</value>
-      </greater-than>
-    </condition>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>aileB</object-name>
+    <object-name>aileronGB</object-name>
+    <object-name>aileronDB</object-name>
+    <object-name>aileH</object-name>
+    <object-name>aileronGH</object-name>
+    <object-name>aileronDH</object-name>
+    <object-name>moteurG</object-name>
+    <object-name>heliceG</object-name>
+    <object-name>bolG</object-name>
+    <object-name>moteurD</object-name>
+    <object-name>heliceD</object-name>
+    <object-name>bolD</object-name>
+    <object-name>rouesG</object-name>
+    <object-name>rouesD</object-name>
+    <object-name>patte</object-name>
+    <object-name>derive</object-name>
+    <object-name>profondeurH</object-name>
+    <object-name>profondeurB</object-name>
+    <object-name>directionG</object-name>
+    <object-name>directionD</object-name>
+    <object-name>montants</object-name>
+    <object-name>essieus</object-name>
+    <object-name>entreroues</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
   </animation>
 
-  <!-- Rpm moteur gauche -->
+  <!-- Interieur -->
   <model>
-    <path>Aircraft/Vickers-Vimy/Models/Instruments/rpm/rpm1.xml</path>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/interior.xml</path>
     <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m> -1.938 </y-m>
-      <z-m>  0.576 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg> 90.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Rpm moteur droit -->
-  <model>
-    <path>Aircraft/Vickers-Vimy/Models/Instruments/rpm/rpm2.xml</path>
-    <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m>  1.938 </y-m>
-      <z-m>  0.576 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Oil temp. moteur gauche -->
-  <model>
-    <path>Aircraft/Vickers-Vimy/Models/Instruments/oiltemp/oiltemp1.xml</path>
-    <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m> -1.938 </y-m>
-      <z-m>  0.445 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg> 90.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Oil temp. moteur droit -->
-  <model>
-    <path>Aircraft/Vickers-Vimy/Models/Instruments/oiltemp/oiltemp2.xml</path>
-    <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m>  1.938 </y-m>
-      <z-m>  0.445 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Oil press. moteur gauche -->
-  <model>
-    <path>Aircraft/Vickers-Vimy/Models/Instruments/oilpressure/oilpressure1.xml</path>
-    <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m> -1.938 </y-m>
-      <z-m>  0.316 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg> 90.000 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Oil press. moteur droit -->
-  <model>
-    <path>Aircraft/Vickers-Vimy/Models/Instruments/oilpressure/oilpressure2.xml</path>
-    <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m>  1.938 </y-m>
-      <z-m>  0.316 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+      <roll-deg>    0.0 </roll-deg>
+      <pitch-deg>   0.0 </pitch-deg>
+      <heading-deg> 0.0 </heading-deg>
     </offsets>
   </model>
 
