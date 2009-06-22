@@ -39,7 +39,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>Needle1</object-name>
+    <object-name>needle</object-name>
     <property>/engines/engine[0]/rpm</property>
     <min>0</min>
     <max>2000</max>
