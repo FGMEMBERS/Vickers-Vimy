@@ -40,6 +40,8 @@
     <object-name>essieus</object-name>
     <object-name>entreroues</object-name>
     <object-name>marches</object-name>
+    <object-name>axes</object-name>
+    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>cables</object-name>
@@ -88,6 +90,8 @@
     <object-name>essieus</object-name>
     <object-name>entreroues</object-name>
     <object-name>marches</object-name>
+    <object-name>axes</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -121,6 +125,23 @@
       <shininess-prop>shininess</shininess-prop>
     </shininess>
 -->
+  </animation>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/Vickers-Vimy/Models/shadow.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowOSG</object-name>
+    <condition>
+      <equals>
+        <property>sim[0]/rendering/shadows-ai</property>
+        <value>true</value>
+      </equals>
+    </condition>
   </animation>
 
   <!-- Interieur -->
