@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.755 </x-m>
+      <y-m> -0.246 </y-m>
+      <z-m> -0.234 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Co pilote -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -4.755 </x-m>
+      <y-m>  0.246 </y-m>
+      <z-m> -0.234 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tireur avant -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Pilot/debout.xml</path>
+    <offsets>
+      <x-m> -5.746 </x-m>
+      <y-m>  0.019 </y-m>
+      <z-m> -0.122 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tireur arrière -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Pilot/debout.xml</path>
+    <offsets>
+      <x-m> -0.773 </x-m>
+      <y-m> -0.027 </y-m>
+      <z-m> -0.396 </z-m>
+      <roll-deg>      0.0 </roll-deg>
+      <pitch-deg>     0.0 </pitch-deg>
+      <heading-deg> 180.0 </heading-deg>
+    </offsets>
+  </model>
+
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> 0.0 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.0 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
