@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+  
+  <path>alt.ac</path>
+  
+  <animation>
+    <object-name>base</object-name>
+    <object-name>screwhead</object-name>
+    <object-name>inner_face</object-name>
+    <object-name>main_face</object-name>
+    <object-name>knob</object-name>
+    <object-name>needle</object-name>
+    
+    <object-name>glass</object-name>
+    <object-name>press-up</object-name>
+    <object-name>press-down</object-name>
+  </animation>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Vickers-Vimy/Models/Effects/Glass/glass</inherits-from>
+    <object-name>glass</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>glass</object-name>
+  </effect>
+  
+  <animation>
+    <type>material</type>
+    <object-name>inner_face</object-name>
+    <object-name>main_face</object-name>
+    <object-name>knob</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+  
+  <animation> 
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>/position/altitude-ft</property>
+    <interpolation>
+      <entry><ind>     0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 15000 </ind><dep> 330 </dep></entry>
+      <entry><ind> 20000 </ind><dep> 435 </dep></entry>
+    </interpolation>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <!-- Pressure Knob -->
+  <animation>
+    <type>pick</type>
+    <visible>false</visible>
+    <object-name>press-up</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <step>0.1</step>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>press-down</object-name>
+    <visible>false</visible>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-adjust</command>
+        <property>instrumentation/altimeter/setting-inhg</property>
+        <step>-0.1</step>
+        <wrap>false</wrap>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation> 
+    <type>rotate</type>
+    <object-name>main_face</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <offset> 0.0 </offset>
+    <factor> 0.5 </factor>
+    <axis> 
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+  <animation> 
+    <type>rotate</type>
+    <object-name>knob</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <factor> 20 </factor>
+    <center>
+      <x-m>  0.00709 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.04477 </z-m>
+    </center>
+    <axis> 
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>
