@@ -9,14 +9,46 @@
     <object-name>interieur</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
   </animation>
 
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Vickers-Vimy/Models/Effects/Glass/glass</inherits-from>
+    <object-name>intvitres</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>intvitres</object-name>
+  </effect>
+  
+  <!-- Planche de bord -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -4.94367 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m>  0.24609 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Yoke -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/yoke/yoke.xml</path>
+    <offsets>
+      <x-m> -4.770 </x-m>
+      <y-m>  0.231 </y-m>
+      <z-m> -0.500 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -4.755 </x-m>
-      <y-m> -0.246 </y-m>
+      <x-m> -4.705 </x-m>
+      <y-m>  0.246 </y-m>
       <z-m> -0.234 </z-m>
     </offsets>
   </model>
@@ -25,8 +57,8 @@
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -4.755 </x-m>
-      <y-m>  0.246 </y-m>
+      <x-m> -4.705 </x-m>
+      <y-m> -0.246 </y-m>
       <z-m> -0.234 </z-m>
     </offsets>
   </model>
@@ -48,21 +80,8 @@
       <x-m> -0.773 </x-m>
       <y-m> -0.027 </y-m>
       <z-m> -0.396 </z-m>
-      <roll-deg>      0.0 </roll-deg>
-      <pitch-deg>     0.0 </pitch-deg>
-      <heading-deg> 180.0 </heading-deg>
-    </offsets>
-  </model>
-
-  <!-- Planche de bord -->
-  <model>
-    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/panel.xml</path>
-    <offsets>
-      <x-m> 0.0 </x-m>
-      <y-m> 0.0 </y-m>
-      <z-m> 0.0 </z-m>
+      <heading-deg> 180 </heading-deg>
     </offsets>
   </model>
 
 </PropertyList>
-

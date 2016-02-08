@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- <PropertyList include="vimy-jsbsim-cnf.xml"> -->
-<PropertyList include="vimy-yasim-cnf.xml">
+<PropertyList include="vimy-base.xml">
 
   <sim>
 
     <description>Vickers Vimy (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM)</author>
 
+    <flight-model archive="y">yasim</flight-model>
+    <aero archive="y">vimy-yasim</aero>
+    
     <rating>
       <FDM type="int">     2 </FDM>
       <systems type="int"> 0 </systems>
@@ -18,4 +20,3 @@
   </sim>
 
 </PropertyList>
-
