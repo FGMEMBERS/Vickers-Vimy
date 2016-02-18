@@ -1,17 +1,92 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
+  <path>panel.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+  
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m> 0.00 </x-m>
+      <y-m> 0.34 </y-m>
+      <z-m> 0.00 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.001 </x-m>
+      <y-m> -0.120 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Oil temp. moteur gauche -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oiltemp/littleoiltemp1.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.037 </y-m>
+      <z-m>  0.022 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oiltemp/littleoiltemp2.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.111 </y-m>
+      <z-m>  0.022 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.042 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- SWITCH -->
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/switch/switch1.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.380 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/switch/switch1.xml</path>
+    <offsets>
+      <x-m> -0.005 </x-m>
+      <y-m> -0.320 </y-m>
+      <z-m> -0.020 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Rpm moteur gauche -->
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/rpm/rpm1.xml</path>
     <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m> -1.938 </y-m>
-      <z-m>  0.576 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg> 90.000 </heading-deg>
+      <x-m>  0.79467 </x-m>
+      <y-m> -1.93800 </y-m>
+      <z-m>  0.33091 </z-m>
+      <heading-deg> 90 </heading-deg>
     </offsets>
   </model>
 
@@ -19,12 +94,10 @@
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
     <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m>  1.938 </y-m>
-      <z-m>  0.576 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <x-m> 0.79467 </x-m>
+      <y-m> 1.93800 </y-m>
+      <z-m> 0.33091 </z-m>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -32,12 +105,10 @@
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oiltemp/oiltemp1.xml</path>
     <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m> -1.938 </y-m>
-      <z-m>  0.445 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg> 90.000 </heading-deg>
+      <x-m>  0.79467 </x-m>
+      <y-m> -1.93800 </y-m>
+      <z-m>  0.19991 </z-m>
+      <heading-deg> 90 </heading-deg>
     </offsets>
   </model>
 
@@ -45,12 +116,10 @@
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oiltemp/oiltemp2.xml</path>
     <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m>  1.938 </y-m>
-      <z-m>  0.445 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <x-m> 0.79467 </x-m>
+      <y-m> 1.93800 </y-m>
+      <z-m> 0.19991 </z-m>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
@@ -58,12 +127,10 @@
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oilpressure/oilpressure1.xml</path>
     <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m> -1.938 </y-m>
-      <z-m>  0.316 </z-m>
-      <roll-deg>     0.000 </roll-deg>
-      <pitch-deg>    0.000 </pitch-deg>
-      <heading-deg> 90.000 </heading-deg>
+      <x-m>  0.79467 </x-m>
+      <y-m> -1.93800 </y-m>
+      <z-m>  0.07091 </z-m>
+      <heading-deg> 90 </heading-deg>
     </offsets>
   </model>
 
@@ -71,14 +138,11 @@
   <model>
     <path>Aircraft/Vickers-Vimy/Models/Interior/Panel/Instruments/oilpressure/oilpressure2.xml</path>
     <offsets>
-      <x-m> -4.149 </x-m>
-      <y-m>  1.938 </y-m>
-      <z-m>  0.316 </z-m>
-      <roll-deg>      0.000 </roll-deg>
-      <pitch-deg>     0.000 </pitch-deg>
-      <heading-deg> -90.000 </heading-deg>
+      <x-m> 0.79467 </x-m>
+      <y-m> 1.93800 </y-m>
+      <z-m> 0.07091 </z-m>
+      <heading-deg> -90 </heading-deg>
     </offsets>
   </model>
 
 </PropertyList>
-

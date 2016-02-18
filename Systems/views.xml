@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
-  <chase-distance-m type="double" archive="y"> -30 </chase-distance-m>
+  <chase-distance-m type="double" archive="y"> -25 </chase-distance-m>
 
   <view n="100">
     <name>Passanger Seat View</name>
@@ -10,13 +10,13 @@
     <type>lookfrom</type>
     <config>
       <from-model type="bool">true</from-model>
-      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
-      <x-offset-m archive="y">  0.270 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  0.585 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -4.608 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -15 </pitch-offset-deg>
-      <default-field-of-view-deg> 60 </default-field-of-view-deg>
       <dynamic-view type="bool">true</dynamic-view>
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <x-offset-m archive="y"> -0.270 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">  0.585 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -4.558 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -12 </pitch-offset-deg>
+      <default-field-of-view-deg> 84 </default-field-of-view-deg>
     </config>
   </view>
 
@@ -39,11 +39,11 @@
   <view n="0">
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y"> -0.270 </x-offset-m> <!-- Right -->
+      <x-offset-m archive="y">  0.270 </x-offset-m> <!-- Right -->
       <y-offset-m archive="y">  0.585 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -4.608 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -15 </pitch-offset-deg>
-      <default-field-of-view-deg> 60 </default-field-of-view-deg>
+      <z-offset-m archive="y"> -4.558 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -12 </pitch-offset-deg>
+      <default-field-of-view-deg> 84 </default-field-of-view-deg>
     </config>
   </view>
 
@@ -84,4 +84,3 @@
   </view>
 
 </PropertyList>
-
