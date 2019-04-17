@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Vickers Vimy Emmanuel BARANGER    2009
+       correction Pierre GEOFFROY      2009
+       correction Emmanuel BARANGER    2010 with Melchior script
+       Bruce McL variant with 2009 trans atlantic re-enactment engines
+
+	https://en.wikipedia.org/wiki/Vickers_Vimy
+
+       Wingspan : 20.75 m (68 ft 1 in)
+       Lenght   : 13.27 m (43 ft 7 in)
+       Height   :  4.76 m (15 ft 8 in)
+       Weight   : 3 220 Kg (7104 lb)
+       Engines  : 2 x 495 cubic inch (8.1 litre) Orenda OE600 V8
+       
+	https://www.brooklandsmuseum.com/explore/our-collection/aircraft/vickers-vimy
+       
+-->
+<airplane mass="7104" version="YASIM_VERSION_CURRENT">
+
+  <approach speed="40" aoa="4">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.4"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.4"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
+  </approach>
+
+  <cruise speed="120" alt="7000">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/boost" value="1"/>
+  </cruise>
+
+  <cockpit x="4.608" y="-0.270" z="0.585"/>
+
+  <fuselage ax="6.208" ay="0" az="-0.302" bx="-6.531" by="0" bz="-0.345" width="1.254" taper="0.5" midpoint="0.25"/>
+
+  <wing x="2.437" y="0" z="1.900" 
+        length="9.388" 
+        camber="0.01"
+        chord="3.147" 
+        taper="1" 
+        dihedral="2">
+        <stall aoa="14" width="1" peak="1.5"/>
+        <flap1 start="0.6" end="1.1" lift="1.2" drag="1.1"/>
+
+        <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+        <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+  </wing>
+
+  <mstab x="2.437" y="0" z="-1.104" 
+         length="9.388"  
+         camber="0.01"
+         chord="3.147" 
+         taper="1" 
+         dihedral="2">
+         <stall aoa="14" width="1" peak="1.5"/>
+         <flap1 start="0.6" end="1.1" lift="1.2" drag="1.1"/>
+
+         <control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
+         <control-input axis="/controls/flight/aileron-trim" control="FLAP1" split="true"/>
+
+         <control-output control="FLAP1" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+         <control-output control="FLAP1" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+  </mstab>
+
+  <hstab x="-5.679" y="0.0" z="0.927" 
+         length="2.371"
+         chord="1.823" 
+         taper="1">
+         <stall aoa="18" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
+
+         <control-input axis="/controls/flight/elevator" control="FLAP0" effectiveness="0.3"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <mstab x="-5.679" y="0.0" z="-0.619" 
+         length="2.371" 
+         chord="1.823" 
+         taper="1">
+         <stall aoa="18" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
+
+         <control-input axis="/controls/flight/elevator" control="FLAP0" effectiveness="0.3"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </mstab>
+
+  <vstab x="-6.110" y="1.629" z="-0.6" 
+         chord="1.118" 
+         length="1.511"
+         taper="1">
+         <stall aoa="14" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
+
+         <control-input axis="/controls/flight/rudder" control="FLAP0" effectiveness="2.0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+  </vstab>
+
+  <vstab x="-6.110" y="-1.629" z="-0.6" 
+         chord="1.118" 
+         length="1.511"
+         taper="1">
+         <stall aoa="14" width="1" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.2" drag="1.1"/>
+
+         <control-input axis="/controls/flight/rudder" control="FLAP0" effectiveness="2.0" invert="true"/>
+         <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+  </vstab>
+
+<!-- Engines
+		2 x 495 cubic inch (8.1 litre) Orenda OE600 V8
+       
+		https://en.wikipedia.org/wiki/Orenda_OE600#Specifications
+       
+		Displacement: 495 cubic inches (8.1 litres)
+		Bore: 4.433 in
+		Stroke: 4.000 in
+		Dimensions: 59.5 (l) x 32 (w) x 32.5 (h) in
+		Compression ratio: 8.1:1
+		Weight: 740 pounds dry (335.6 kg)
+		Performance: 600 hp @ 4,400 rpm takeoff (447 kW), 500 hp continuous (373 kW)
+		Fuel Consumption: 0.44 lbs./hp/hr (100LL)       
+-->
+
+  <!-- Moteur gauche -->
+  <propeller x="3.175" y="2.540" z="0.395"
+             mass="740" 
+             moment="35" 
+             radius="1.68"
+             cruise-power="500" 
+             cruise-speed="120"
+             cruise-rpm="1400" 
+             cruise-alt="7000"
+             contra="1">
+             <actionpt x="4.643" y="2.539" z="0.254"/>
+             <piston-engine eng-rpm="1800" 
+                            eng-power="600"
+                            displacement="495" 
+                            compression="5">
+                            <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+                            <control-input axis="/controls/engines/engine[0]/starter" control="STARTER"/>
+                            <control-input axis="/controls/engines/engine[0]/magnetos" control="MAGNETOS"/>
+                            <control-input axis="/controls/engines/engine[0]/mixture" control="MIXTURE"/>
+             </piston-engine>
+  </propeller>
+
+  <!-- Moteur droite -->
+  <propeller x="3.175" y="-2.540" z="0.395"
+             mass="740" 
+             moment="35" 
+             radius="1.68"
+             cruise-power="500" 
+             cruise-speed="120"
+             cruise-rpm="1400" 
+             cruise-alt="7000"
+             contra="1">
+             <actionpt x="4.643" y="-2.539" z="0.254"/>
+             <piston-engine eng-rpm="1800" 
+                            eng-power="600"
+                            displacement="495" 
+                            compression="5">
+                            <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+                            <control-input axis="/controls/engines/engine[1]/starter" control="STARTER"/>
+                            <control-input axis="/controls/engines/engine[1]/magnetos" control="MAGNETOS"/>
+                            <control-input axis="/controls/engines/engine[1]/mixture" control="MIXTURE"/>
+             </piston-engine>
+  </propeller>
+
+  <!-- Roues gauches -->
+  <gear x="3.203" y="2.442" z="-2.325" 
+        compression="0.3" 
+        spring="1" 
+        damp="10">
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+  </gear>
+
+  <!-- Roues droites -->
+  <gear x="3.203" y="-2.442" z="-2.325" 
+        compression="0.3"
+        spring="1" 
+        damp="10">
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+  </gear>
+
+  <!-- Patte de queue -->
+  <gear x="-6.264" y="0" z="-1.284" 
+        compression="0.1">
+        <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING"/>
+  </gear>
+
+  <!-- Patte de nez -->
+  <gear x="6.148" y="0" z="-2.121" 
+        compression="0.1">
+        <control-input axis="/controls/gear/tailwheel-lock" src0="0" src1="1" dst0="1" dst1="0" control="CASTERING"/>
+  </gear>
+
+  <tank x="2" y="0" z="-0.90" capacity="110"/>
+
+</airplane>
